@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react"
 import "./Slide.scss"
+import Slider from "infinite-react-carousel";
 
 //library to slide pages - infinite react carousel
-const Slide = () => {
+const Slide = ({ children, slidesToShow, arrowsScroll }) => {
   return (
     <div className="slide">
-        <div className="container">
-
-        </div>
+      <div className="container">
+        <Slider slidesToShow={slidesToShow} arrowsScroll={arrowsScroll}>
+          {children}
+        </Slider>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Slide
+export default Slide;

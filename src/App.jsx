@@ -34,7 +34,7 @@ function App() {
       element: <Layout />, //pages displayed - layout set
       children:[  //children, eg:- /gig
         {
-          path: "/home",
+          path: "/",
           element: <Home />
         },
         {
