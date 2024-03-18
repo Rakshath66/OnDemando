@@ -7,6 +7,7 @@ const GigCard = ({ item }) => {
     <Link to="/gig/123" className="link">
       <div className="gigCard">
         <img src={item.img} alt="" />
+        
         <div className="info">
           <div className="user">
             <img src={item.pp} alt="" />
@@ -18,7 +19,9 @@ const GigCard = ({ item }) => {
             <span>{item.star}</span>
           </div>
         </div>
+
         <hr />
+
         <div className="detail">
           <img src="./img/heart.png" alt="" />
           <div className="price">

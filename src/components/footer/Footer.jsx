@@ -65,12 +65,15 @@ function Footer() {
             <span>Working Not Working</span>
           </div>
         </div>
+
         <hr />
+
         <div className="bottom">
           <div className="left">
             <h2>liverr</h2>
             <span>© Liverr International Ltd. 2023</span>
           </div>
+          
           <div className="right">
             <div className="social">
               <img src="/img/twitter.png" alt="" />

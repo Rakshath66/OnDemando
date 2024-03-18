@@ -5,6 +5,7 @@ function ProjectCard({ card }) {
   return (
     <div className="projectCard">
       <img src={card.img} alt="" />
+
       <div className="info">
         <img src={card.pp} alt="" />
         <div className="texts">
@@ -12,6 +13,7 @@ function ProjectCard({ card }) {
           <span>{card.username}</span>
         </div>
       </div>
+      
     </div>
   );
 }
