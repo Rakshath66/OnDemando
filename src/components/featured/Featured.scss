@@ -29,6 +29,8 @@
                 justify-content: space-between;
                 background-color: white;
                 border-radius: 5px;
+                overflow: hidden;
+
                 .searchInput{
                     display: flex;
                     align-items: center;
@@ -43,16 +45,22 @@
                     input{
                         border: none;
                         outline: none;
+
+                        &::placeholder {
+                            color: gray;
+                        }
                     }
 
-                    button{
-                        width: 120px;
-                        height: 50px;
-                        border: none;
-                        background-color: #1dbf73;
-                        color: white;
-                        cursor: pointer;
-                    }
+                }
+
+                button{
+                    width: 120px;
+                    height: 50px;
+                    border: none;
+                    background-color: #1dbf73;
+                    color: white;
+                    align-self: flex-end;
+                    cursor: pointer;
                 }
             }
 
@@ -61,15 +69,18 @@
                 align-items: center;
                 gap: 10px;
 
-                span{}
+                span{
+                    width: max-content;
+                }
+
                 button{
+                    width: max-content;
                     color: white;
-                    background-color: transparent;
                     border: 1px solid white;
                     padding: 5px 10px;
                     border-radius: 20px;
+                    background-color: transparent;
                     font-size: 14px;
-                    cursor: pointer;
                 }
             }
         }

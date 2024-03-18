@@ -3,7 +3,11 @@ import "./TrustedBy.scss"
 
 const TrustedBy = () => {
   return (
-    <div>TrustedBy</div>
+    <div className="trustedBy">
+      <div className="container">
+        <span>TrustedBy</span>
+      </div>
+    </div>
   )
 }
 
